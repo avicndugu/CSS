@@ -1,0 +1,128 @@
+.container{
+	width:500px;
+	height:500px;
+	position:absolute;
+	}
+.box {
+	width:100px;
+	height:100px;
+	position:absolute;
+}
+.box:hover{
+	width:150px;
+	height:150px;
+	-ms-transform: rotate(20deg); /* IE 9 */
+	-webkit-transform: rotate(20deg); /* Safari */
+	transform: rotate(20deg);
+	border-radius: 30px;
+
+	opacity: 0.5;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+#box1{
+	top:5%;
+	right:25%;
+	z-index: 5;
+	background-color:#400;
+}
+#box2{
+	top:10%;
+	right:10%;
+	z-index: 10;
+	background-color:#800; /*dark green*/
+}
+#box3{
+	top:25%;
+	right:3%;
+	background-color:#c00;
+	z-index: 15;
+}
+#box4{
+	top:40%;
+	right:0%;
+	z-index: 20;
+	background-color:#f00; /*green*/
+}
+/*Bottom*/
+
+
+/*eights*/
+#box5{
+	bottom:25%;
+	right:3%;
+	background-color:#f40;
+	z-index: 25;
+}
+#box6{
+	right:10%;
+	bottom:10%;
+	background-color:#f80;
+	z-index: 30;
+}
+#box7{
+	bottom:5%;
+	right:25%;
+	z-index: 35;
+	background-color:#fc0;
+}
+#box8{
+	right:40%;
+	bottom:0%;
+	background-color:#ff0; /*blue*/
+	z-index: 40;
+}
+#box9{
+	bottom:5%;
+	left:25%;
+	background-color:#8f4;
+	z-index: 45;
+}
+
+#box10{
+	left:10%;
+	bottom:10%;
+	background-color:#8f0;
+	z-index: 50;
+}
+
+#box11{
+	bottom:25%;
+	left:3%;
+	z-index: 55;
+	background-color:#0ff;
+}
+#box12{
+	top:40%;
+	left:0%;
+	background-color:#0cf; /*red*/
+	z-index: 60;
+}
+#box13{
+	top:25%;
+	left:3%;
+	background-color:#08f;
+	z-index: 65;
+}
+#box14{
+	top:10%;
+	left:10%;
+	z-index: 70;
+	background-color:#04f;
+}
+#box15{
+	top:5%;
+	left:25%;
+	background-color:#00f;
+	z-index: 75;
+}
+#box16{
+	top:0%;
+	right:40%;
+	z-index: 80;
+	background-color:#000; /*black*/
+}
+.text {
+	height:20px;
+	position:absolute;
+	bottom: 10%;
+}
