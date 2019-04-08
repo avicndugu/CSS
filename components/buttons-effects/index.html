@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buttons Effects</title>
+    <style type="text/css">
+        button {
+          padding: 15px 25px;
+          font-size: 24px;
+          text-align: center;
+          cursor: pointer;
+          /*outline: none;*/
+          color: #fff;
+          background-color: #4CAF50;
+          border: none;
+          border-radius: 15px;
+           /*box-shadow: 0 9px #999;*/
+        }
+        .button:active {
+            /*transform: scale(0.9);*/
+            /*transform:translateY(4px);*/
+        }
+        .button:active {
+            transform: scale(0.9);
+            /*transition:0.01s;*/
+
+                /*Buttons Clicked animation*/
+/*        @-webkit-keyframes bounce {
+                0% {
+                    transform: scale(1,1) translate(0px, 0px);
+                }
+          
+                30%{
+                    transform: scale(1,0.8) translate(0px, 10px); 
+                }
+
+                75%{
+                    transform: scale(1,1.1) translate(0px, -25px); 
+                }
+                  
+                100% {
+                    transform: scale(1,1) translate(0px, 0px);
+                }
+        }*/
+
+   /*     button:active {
+            -webkit-animation: bounce 0.75s infinite;
+        }
+        .button:hover {background-color: #3e8e41}
+
+        .bounce {
+            -webkit-animation: bounce 0.75s 1s;
+        }*/
+    </style>
+</head>
+<body>
+    <button class="button bounce">Click Me</button>
+    <button class="button">Another button</button>
+</body>
+</html>
