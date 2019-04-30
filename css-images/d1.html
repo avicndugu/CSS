@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bear Cub</title>
+    <style type="text/css">
+        /*.container {
+            width:600px;
+            height:600px;
+            background-color: #eee;
+            margin:0 auto;
+            padding:100px 0;
+        }*/
+        #head {
+            width:300px;
+            height: 300px;
+            background-color: #63472f;
+            border-radius: 50%;
+            margin:0 auto;
+            position:relative;
+            bottom:95px;
+            z-index:100;
+            /*padding-top:40px;*/
+
+        }
+        .ear-holder  {
+            margin:0 auto;
+            /*, .eye-holder, .nose-holder*/
+            /*position:relative;*/
+            /*display:block;*/
+            /*overflow:hidden;*/
+        }
+        .ear-holder, .eye-holder {
+            /*position:relative;*/
+            width:400px;
+            overflow: hidden;
+            /*height:125px;*/
+            /*top:50px;*/
+            /*z-index: 1;*/
+        }
+        .ear {
+            width:100px;
+            height:125px;
+            background-color: #140c0a;
+            border-radius: 50% 50% 30% 30%;
+            float:left;
+            margin: 0 50px;
+            z-index: 1;
+        }
+        /*.ear .left {
+            padding:30px;
+        }*/
+        .inner-ear {
+            width:50px;
+            height:75px;
+            background-color: #752c01;
+            border-radius: 40% 50% 30% 30%;
+            /*z-index: 5;*/
+            position: relative;
+            top:50px;
+            left:25px;
+        }
+/*        #left {
+            float:left;
+        }*/
+        .eye-holder {
+            width:100%;
+            position:relative;
+            top:80px;
+            /*z-index: 200;*/
+        }
+        .eye {
+            width:40px;
+            height:40px;
+            background-color: #231c14;
+            border-radius: 40% 50%;
+            float:left;
+            margin:0 40px;
+            border-bottom: solid 2px #fff;
+        }
+
+        .pupil {
+            width:10px;
+            height:10px;
+            background-color: yellow;
+            border-radius: 40% 50%;
+            position: relative;
+            top:10px;
+            left:5px;
+        }
+
+
+        #snout {
+            position:relative;
+            width:100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #c38959;
+            margin:0 auto;
+            margin-left:70px;
+            top:110px;
+        }
+        .nose-holder {
+            overflow: hidden;
+        }
+        .nose-hole {
+            width:25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: #140c0a;
+            float:left;
+            margin:10px;
+        }
+
+        #mouth {
+            width:70px;
+            height: 10px;
+            background-color: green;
+            margin-top:8px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="ear-holder">
+                    <div class="ear">
+                        <div class="inner-ear"></div>
+                    </div>
+                    <div class="ear right" id="right-ear">
+                        <div class="inner-ear"></div>
+                    </div>
+                </div>
+            <div id="head">
+                <div class="eye-holder">
+                    <div class="eye" id="left">
+                        <div class="pupil"></div>
+                    </div>
+                    <div class="eye" id="right-eye">
+                        <div class="pupil"></div>
+                    </div>
+                </div>
+                <div id="snout">
+                    <div class="nose-holder">
+                        <div class="nose-hole left"></div>
+                        <div class="nose-hole right"></div>                        
+                    </div>
+                    <div id="mouth"></div>
+                </div>
+            </div>
+            <!-- <div class="eye-holder">
+                <div class="eye" id="left">
+                    <div class="pupil"></div>
+                </div>
+                <div class="eye" id="right-eye">
+                    <div class="pupil"></div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+</body>
+</html>
