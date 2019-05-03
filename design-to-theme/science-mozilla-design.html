@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floats</title>
+    <link rel='stylesheet' href='styles.css'/>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <style type="text/css">
+      
+      /*************END OF LAYOUT STYLING****************/
+      .page-content {
+        overflow: hidden;
+        /*background-color: #EAEDF0;*/
+        /*height: 200px;*/
+        background-color: #F5CF8E;    /* Yellow */ 
+        /*float:left;*/
+      }
+      .container {
+        /*padding:20px 50px;*/
+      }
+      .content-item {
+        width: 100%;
+        /*height: 160px;*/
+        float: left;
+      }
+      .half {
+        width: 50%;
+        background-color: orange;
+      }
+      .half-1 {
+        width: 50%;
+        background-color: red;
+      }
+      .third {
+        width: 33.33%;
+        background-color: orange;
+      }
+      .third-1 {
+        width:33.33%;
+        background-color: red;
+      }
+
+      .footer {
+        clear:both;
+        background-color: #D6E9FE;    /* Light blue */
+        /*overflow:hidden;*/
+
+      }
+      .column {
+        float: left;
+        width: 31%;
+        margin:20px  1.15%;
+        /*height: 160px;*/
+        background-color: #B2D6FF;    /* Medium blue*/ 
+      }
+      /*************END OF LAYOUT STYLING****************/
+
+      /*************SECTION SPECIFIC STYLING*****************/
+      #splash {
+        text-align: center;
+        padding:100px 20%;
+      }
+      #process {
+        padding: 50px 70px;
+      }
+      .text-holder {
+        padding:60px;
+      }
+      .container img {
+        width:100%;
+      }
+
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+  </head>
+  <body>
+    <nav id="nav">
+        <div id="logo">
+            <img src="rocket.png">
+        </div>
+        <div id="nav-links">
+            <ul>
+                <a href=""><li class="nav-items">Home</li></a>
+                <a href=""><li class="nav-items">About</li></a>
+                <a href=""><li class="nav-items">Services</li></a>
+                <a href=""><li class="nav-items">Contacts</li></a>
+            </ul>
+        </div>
+    </nav>
+    <!-- End of menu bar -->
+    <div class="page-content" id="splash">
+      <div class="container">
+        <h1>Tag line</h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+    <div class="page-content" id="process">
+      <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+    <div class="page-content">
+        <div class="content-item half">
+          <div class="container">
+            <img src="long-image.jpg">
+            <div class="text-holder">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</p>
+              <button>Test</button>
+            </div>
+          </div>
+        </div>
+        <div class="content-item half-1">
+          <div class="container">
+            <img src="long-image.jpg">
+            <div class="text-holder">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+              </p>
+              <button>Test</button>
+          </div>
+        </div>
+    </div>
+    <div class="page-content">
+      <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+         proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="content-item third">
+        <div class="container">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+      <div class="content-item third-1">
+        <div class="container">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+      <div class="content-item third">
+        <div class="container">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+<!--     <div class='footer'>
+      <div class="column"></div>
+      <div class="column"></div>
+      <div class="column"></div>
+    </div> -->
+    <footer id="footer">
+        <div id="footer-links">
+            <ul>
+                <a href=""><li class="footer-items">Twitter</li></a>
+                <a href=""><li class="footer-items">Github</li></a>
+                <a href=""><li class="footer-items">Instagram</li></a>
+                <a href=""><li class="footer-items">license</li></a>
+                <a href=""><li class="footer-items">Email us</li></a>
+            </ul>
+        </div>
+        <div id="copyright">
+            <p>&copy; Avic Ndugu 2019</p>
+        </div>
+    </footer>
+  </body>
+</html>
