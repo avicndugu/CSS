@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        .container {
+            width:500px;
+            height:500px;
+            margin:auto;
+            position:relative;
+            /*display:block;*/
+            background-color: blue;
+            margin-top: 5%;
+        }
+        #tail {
+            position:absolute;
+            width:90px; 
+            height:0;
+            left:60px;
+            top:50px;
+            border-top:400px solid #502d17;
+            border-left:50px solid transparent;
+            border-right:50px solid transparent;
+            border-radius: 100px 100px 0 0;
+            transform:rotate(-40deg); 
+        }
+        #ears {
+            position:absolute;
+            width:200px;
+            /*height: 50px;*/
+            z-index: 10;
+            top:0%;
+            left:30%;
+            /*left:20%;*/
+            display:flex;
+            justify-content: space-around;
+        }
+        .ear {
+            width: 70px;
+            height:70px;
+            background-color: #ac6133;
+            border-radius: 50%;
+            display:flex;
+            justify-content: space-around;
+            padding-top:15px;
+        }
+        .ear-inner {
+            width: 50px;
+            height:50px;
+            background-color: #502d17;
+            border-radius: 50%; 
+        }
+        #head {
+            position:absolute;
+            width:200px;
+            height: 200px;
+            top: 5%;
+            left: 30%;
+            background-color: #ac6133;
+            border-radius: 50%;
+            z-index: 20;
+        }
+        #eyes {
+            position:relative;
+            top:50px;
+            left:10px;
+            width:180px;
+            height: 70px;
+            /*background-color: white;*/    
+            z-index: 20;
+            display:flex;
+            justify-content: space-around;
+        }
+        .eye {
+            width: 65px;
+            height:65px;
+            background-color: #fff;
+            border-radius: 50%;
+            border:solid 5px #111;
+        }
+        .pupil {
+            position:relative;
+            width: 30px;
+            height:30px;
+            top:30px;
+            left:20px;
+            background-color: #111;
+            border-radius: 50%;
+        }
+        #nose {
+            position: absolute;
+            width:20px; 
+            height:10px;
+            bottom:10%;
+            left:35%; 
+            border-top:40px solid #222;
+            border-left:20px solid transparent;
+            border-right:20px solid transparent;
+            border-radius: 50px 50px 0 0; 
+        }
+        #mouth {
+            position:absolute;
+            width:45px;
+            top:40%;
+            left:45%;
+            z-index: 15;
+            display:flex;
+            justify-content: space-between;
+        }
+        .teeth {
+            width:20px; 
+            height:35px;
+            background-color: white;
+        }
+        #body {
+            position:absolute;
+            width: 350px;
+            height: 400px;
+            bottom:0%;
+            left:15%;
+            background-color: #794422;
+            border-radius: 400px 400px 300px 300px;
+            z-index: 10;
+        }
+        #hands {
+            position:absolute;
+            width:300px;
+            z-index: 20;
+            bottom:40%;
+            left:20%;
+            display:flex;
+            justify-content: space-around;
+
+        }
+        .hand {
+            width: 70px;
+            height:70px;
+            background-color: #794422;
+            border-radius: 50%;
+            display:flex;
+            border:solid 4px #111;
+            justify-content: space-around;
+        }
+        .finger{
+            margin-top:40px;
+            width: 35px;
+            height:20px;
+            background-color: #502d17;
+            border-radius: 50%;
+            border:solid 4px #111;
+        }
+        #legs {
+            position:absolute;
+            width:300px;
+            z-index: 1000;
+            bottom:0%;
+            left:20%;
+            display:flex;
+            justify-content: space-around;
+
+        }
+        .leg {
+            width: 90px;
+            height:50px;
+            background-color: #794422;
+            border:solid 4px #111;
+            border-radius: 100px 100px 0 0;
+            display:flex;
+            justify-content: space-around;
+
+        }
+        .toes{
+            margin-top:40px;
+            width: 30px;
+            height:10px;
+            background-color: orange;
+            border-radius: 100px 100px 0 0;
+            border:solid 4px #111;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="tail"></div>
+        <div id="body"></div>
+        <div id="ears">
+            <div class="ear">
+                <div class="ear-inner"></div>
+            </div>
+            <div class="ear">
+                <div class="ear-inner"></div>
+            </div>
+        </div>
+        <div id="head">
+            <div id="eyes">
+                <div class="eye">
+                    <div class="pupil"></div>
+                </div>
+                <div class="eye">
+                    <div class="pupil"></div>
+                </div>
+            </div>
+            <div id="nose"></div>
+        </div>
+        <div id="mouth">
+            <div class="teeth"></div>
+            <div class="teeth"></div>    
+        </div>
+        <div id="hands">
+            <div class="hand">
+                <div class="finger"></div>
+                <div class="finger"></div>
+                <div class="finger"></div>
+            </div>
+            <div class="hand">
+                <div class="finger"></div>
+                <div class="finger"></div>
+                <div class="finger"></div>
+            </div>
+        </div>
+        <div id="legs">
+            <div class="leg">
+                <div class="toes"></div>
+                <div class="toes"></div>
+                <div class="toes"></div>
+            </div>
+            <div class="leg">
+                <div class="toes"></div>
+                <div class="toes"></div>
+                <div class="toes"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
