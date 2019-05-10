@@ -8,6 +8,10 @@
     <style type="text/css">
       
       /*************END OF LAYOUT STYLING****************/
+      h3 {
+        font-size: 25px;
+        text-align: center;
+      }
       .page-content {
         /*overflow: hidden;*/
         /*background-color: #EAEDF0;*/
@@ -80,14 +84,41 @@
       .supporters .content-item{
         margin-left:2%;
       }
+
       .what-new {
-        /*overflow: hidden;*/
-        /*padding:10%;*/
+        padding:40px 40px;
+      }
+      .what-new .third {
+        width: 33.33%;
+        background-color: orange;
       }
       .page-content {
         clear:both;
       }
 
+
+
+      /****************FORM CONTENT*******************/
+      .subscribe {
+          /*background-color: #eee;*/
+          text-align: center;
+          padding:30px 20%;
+        }
+        #form-1 {
+            padding:20px 0;
+        }
+        #form-1 input[type="submit"],input[type="email"],input[type=""],input[type=""] {
+            padding:20px;
+            border:solid 2px green;
+        }
+        #form-1 input[type="submit"] {
+            background-color: orange;
+            position: relative;
+            right:10px;
+        }
+        input[type="checkbox"] {
+          margin:20px 5px 0 0px;
+        }
     </style>
     <link rel="stylesheet" type="text/css" href="nav.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
@@ -187,6 +218,7 @@
       </div>
     </div>
     <div class="page-content what-new">
+        <h3>We are supported by</h3>
         <div class="content-item third">
           <div class="container">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -218,22 +250,14 @@
           </div>
       </div>
     </div>
-    <div class="page-content">
+    <div class="page-content subscribe">
       <div class="container">
-        <div class="subscribe">
-          <h3>Receive our newsletter</h3>
-          <form id="form-1">
-              <input type="email" name="email" placeholder="your email">
-              <input type="submit" value="subscribe" class="form-button"><br>
-              <input type="checkbox" name="newsletter" value="newsletter">Allow us to send you a monthly newsletter
-          </form>
-          <form id="form-2">
-              <div class="in-button">
-                  <input type="email" name="email" placeholder="your email" id="email">
-                  <input type="submit" value="subscribe" class="form-button">
-              </div>
-          </form>
-        </div>
+        <h3>Receive our newsletter</h3>
+        <form id="form-1">
+            <input type="email" name="email" placeholder="your email">
+            <input type="submit" value="subscribe"><br>
+            <input type="checkbox" name="newsletter" value="newsletter">Allow us to send you a monthly newsletter
+        </form>
       </div>
     </div>
 <!--     <div class='footer'>
