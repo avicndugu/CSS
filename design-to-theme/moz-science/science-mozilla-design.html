@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floats</title>
+    <!-- <link rel='stylesheet' href='styles.css'> -->
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <style type="text/css">
+      
+      /*************END OF LAYOUT STYLING****************/
+      h3 {
+        font-size: 25px;
+        text-align: center;
+      }
+      button {
+        padding:8px 20px;
+        border:solid 1px #fff;
+      }
+      .half button {
+         background-color: orange;
+      }
+      .half-1 button {
+         background-color: red;
+      }
+      .page-content {
+        /*overflow: hidden;*/
+        /*background-color: #EAEDF0;*/
+        /*height: 200px;*/
+        /*background-color: #F5CF8E;    /* Yellow */
+        /*float:left;*/
+      }
+      .container {
+        /*padding:20px 50px;*/
+      }
+      .content-item {
+        width: 100%;
+        /*height: 160px;*/
+        float: left;
+      }
+      .half {
+        width: 50%;
+        background-color: orange;
+      }
+      .half-1 {
+        width: 50%;
+        background-color: red;
+      }
+      .third {
+        width: 30.33%;
+        background-color: orange;
+      }
+      .third-1 {
+        width:30.33%;
+        background-color: red;
+      }
+      .third-full {
+        width: 33.33%;
+      }
+
+      .footer {
+        clear:both;
+        background-color: #D6E9FE;    /* Light blue */
+        /*overflow:hidden;*/
+
+      }
+      .column {
+        float: left;
+        width: 31%;
+        margin:20px  1.15%;
+        /*height: 160px;*/
+        background-color: #B2D6FF;    /* Medium blue*/ 
+      }
+      /*************END OF LAYOUT STYLING****************/
+
+      
+
+      /*************SECTION SPECIFIC STYLING*****************/
+      #splash {
+        text-align: center;
+        padding:100px 20%;
+        background:url("adventure-beautiful.jpg") no-repeat center center;
+      }
+      .icons {
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        color:#3bba99;
+        /*font-size: 25px;*/
+      }
+      .icon {
+        width: 100px;
+        height:100px;
+        border-radius: 50%;
+        padding:30px;
+        background-color: #3bba99;
+        margin:0 auto;
+      }
+      .sign {
+        font-size: 40px;
+      }
+      
+      #process {
+        /*width: 90%;*/
+        margin: 0 auto;
+        /*padding:10px 10px;*/
+        overflow: hidden;
+        /*padding:0 1%;*/
+        /*background-color: red;*/
+      }
+      #process .container {
+        padding:10px 50px;
+      }
+      .text-holder {
+        padding:60px;
+      }
+      .container img {
+        width:100%;
+      }
+      .supporters {
+        overflow: hidden;
+        padding:10%;
+        background:url("adventure-beautiful.jpg") no-repeat center center;
+      }
+      .supporters .content-item{
+        margin-left:2%;
+      }
+
+      .what-new {
+        padding:40px 40px;
+      }
+      .what-new .third {
+        width: 33.33%;
+        background-color: orange;
+      }
+      .page-content {
+        clear:both;
+      }
+
+
+
+      /****************FORM CONTENT*******************/
+      .subscribe {
+          /*background-color: #eee;*/
+          text-align: center;
+          padding:30px 20%;
+        }
+        #form-1 {
+            padding:20px 0;
+        }
+        #form-1 input[type="submit"],input[type="email"],input[type=""],input[type=""] {
+            padding:20px;
+            border:solid 2px green;
+        }
+        #form-1 input[type="submit"] {
+            background-color: orange;
+            position: relative;
+            right:10px;
+        }
+        input[type="checkbox"] {
+          margin:20px 5px 0 0px;
+        }
+
+        .image-container {
+          width:30%;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+  </head>
+  <body>
+    <nav id="nav">
+        <div id="logo">
+            <img src="rocket.png">
+        </div>
+        <div id="nav-links">
+            <ul>
+                <a href=""><li class="nav-items">Home</li></a>
+                <a href=""><li class="nav-items">About</li></a>
+                <a href=""><li class="nav-items">Services</li></a>
+                <a href=""><li class="nav-items">Contacts</li></a>
+            </ul>
+        </div>
+    </nav>
+    <!-- End of menu bar -->
+    <div class="page-content" id="splash">
+      <div class="container">
+        <h1>Tag line</h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="container icons">
+        <div class="content-item third-full">
+          <div class="icon">
+            <img src="img/icon-access.svg">
+          </div>
+        </div>
+        <div class="sign">
+          +
+        </div>
+        <div class="content-item third-full">
+          <div class="icon">
+            <img src="img/icon-community.svg">
+          </div>
+        </div>
+        <div class="sign">
+          =
+        </div>
+        <div class="content-item third-full">
+          <div class="icon">
+            <img src="img/icon-open.svg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-content">
+        <div id="process">
+            <div class="content-item third-full">
+                <div class="container">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </div>
+            </div>
+            <div class="content-item third-full">
+                <div class="container">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </div>
+            </div>
+            <div class="content-item third-full">
+                <div class="container">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="content-item half">
+          <div class="container">
+            <img src="long-image.jpg">
+            <div class="text-holder">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</p>
+              <button>Test Button</button>
+            </div>
+          </div>
+        </div>
+        <div class="content-item half-1">
+          <div class="container">
+            <img src="long-image.jpg">
+            <div class="text-holder">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+              </p>
+              <button>Test Button</button>
+          </div>
+        </div>
+    </div>
+    <div class="page-content supporters">
+      <div class="content-item third">
+        <div class="container">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+      <div class="content-item third-1">
+        <div class="container">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+      <div class="content-item third">
+        <div class="container">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+    </div>
+    <div class="page-content what-new">
+        <h3>We are supported by</h3>
+        <div class="content-item third">
+          <div class="container">
+            <div class="image-container">
+              <img src="img/logo-siegel-new.svg">
+            </div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+      </div>
+      <div class="content-item third">
+          <div class="container">
+            <div class="image-container">
+              <img src="img/logo-helmsley@2x.jpg">
+            </div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+      </div>
+      <div class="content-item third">
+          <div class="container">
+            <div class="image-container">
+              <img src="img/logo-sloan@2x.jpg">
+            </div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+      </div>
+    </div>
+    <div class="page-content subscribe">
+      <div class="container">
+        <h3>Receive our newsletter</h3>
+        <form id="form-1">
+            <input type="email" name="email" placeholder="your email">
+            <input type="submit" value="subscribe"><br>
+            <input type="checkbox" name="newsletter" value="newsletter">Allow us to send you a monthly newsletter
+        </form>
+      </div>
+    </div>
+<!--     <div class='footer'>
+      <div class="column"></div>
+      <div class="column"></div>
+      <div class="column"></div>
+    </div> -->
+    <footer id="footer">
+        <div id="footer-links" class="center-content">
+            <ul>
+                <li class="footer-items"><a href="">Twitter</a></li>
+                <li class="footer-items"><a href="">Github</a></li>
+                <li class="footer-items"><a href="">Instagram</a></li>
+                <li class="footer-items"><a href="">license</a></li>
+                <li class="footer-items"><a href="">Email us</a></li>
+            </ul>
+        </div>
+        <div id="copyright" class="center-content">
+            <p>&copy; Avic Ndugu 2019</p>
+        </div>
+    </footer>
+  </body>
+</html>
