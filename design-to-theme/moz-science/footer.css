@@ -1,7 +1,8 @@
 #footer {
     padding:20px 70px;
     text-align: center;
-    background-color: #D6E9FE;    /* Light blue */
+    background-color: #4d4f53;    /* Light blue */
+    color:#bbb;
 }
 
 #footer-links li{
@@ -16,6 +17,7 @@
 }
 #footer-links a {
     text-decoration: none;
+    color:#bbb;
 }
 
 @media screen and (min-width: 800px) {
