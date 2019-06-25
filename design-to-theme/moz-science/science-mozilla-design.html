@@ -94,13 +94,21 @@
         padding:100px 20%;
         background:url("adventure-beautiful.jpg") no-repeat center center;
       }
+      #icons {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+      }
+
       .icons {
         display: flex;
         align-items:center;
         justify-content: space-between;
         color:#3bba99;
-        /*font-size: 25px;*/
       }
+      
       .icon {
         width: 100px;
         height:100px;
@@ -114,12 +122,11 @@
       }
       
       #process {
-        /*width: 90%;*/
+        position:relative;
+        top:-50px;
+        padding:200px 0 10px 0;
         margin: 0 auto;
-        /*padding:10px 10px;*/
         overflow: hidden;
-        /*padding:0 1%;*/
-        /*background-color: red;*/
       }
       #process .container {
         padding:10px 50px;
@@ -224,7 +231,7 @@
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </div>
     </div>
-    <div class="page-content">
+    <!-- <div class="page-content">
       <div class="container icons">
         <div class="content-item third-full">
           <div class="icon">
@@ -248,10 +255,35 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="page-content">
-        <div id="process">
+    <div class="page-content" id="process">
+        <div id="icons">
+            <div class="container icons">
+                <div class="content-item third-full">
+                  <div class="icon">
+                    <img src="img/icon-access.svg">
+                  </div>
+                </div>
+                <div class="sign">
+                  +
+                </div>
+                <div class="content-item third-full">
+                  <div class="icon">
+                    <img src="img/icon-community.svg">
+                  </div>
+                </div>
+                <div class="sign">
+                  =
+                </div>
+                <div class="content-item third-full">
+                  <div class="icon">
+                    <img src="img/icon-open.svg">
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div>
             <div class="content-item third-full">
                 <div class="container">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
