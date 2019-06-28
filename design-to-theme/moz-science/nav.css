@@ -1,5 +1,5 @@
 #nav {
-    padding:20px 70px;
+    padding:10px 70px;
     /*display:block;*/
     overflow:auto;
 }
@@ -13,12 +13,12 @@
 }
 
 #logo img {
-    height:100px;
+    height:70px;
 }
 
 #nav-links ul {
     list-style-type: none;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 #nav-links li{
@@ -28,6 +28,12 @@
 #nav-links a {
     text-decoration: none;
     margin-right:50px;
+    color: #717a81;
+}
+#nav-links a:hover {
+    text-decoration: none;
+    margin-right:50px;
+    color: #000;
 }
 
 #nav:after {
