@@ -14,29 +14,4 @@
         grid-column-gap: 45px;
     }
 }
-
-
 /*End of layout content and sidebar*/
- /*or*/
-/*@media (min-width: 48em) {
-    .content {
-        display: grid;
-        grid-template-columns: 4fr 2fr;
-    }
-}*/
-
-/*or*/
-/*@media (min-width: 48em) {
-    .main {
-        grid-area: main;
-    }
-    .aside {
-        grid-area: aside;
-    }
-
-    .content {
-        display: grid;
-        grid-template-areas: 'main aside';
-    }
-
-}*/
